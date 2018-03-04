@@ -1,4 +1,4 @@
-/* 1.
+/* 1. Does Javascript pass parameters by value or by reference?
 
 */
 
@@ -55,3 +55,31 @@ function compareObjects (obj1, obj2) {
 }
 
 /* I used this algorithm instead of using JSON stringify  to compare to Objects as strings because the contents of an object can be the same, but due to lack of indexes the same object can display the key value pairs in different orders so it isn't always the best measurement of comparing values in two objects */
+
+// 4. Implement a recursive fibonacci function.
+function fibonacci(num, cache) {
+  cache = cache || {};
+
+  if (cache[num]) return cache[num];
+  //base case
+  if (num <= 1) return 1;
+
+  return cache[num] = fibonacci(num - 1, cache) + fibonacci(num - 2, cache);
+}
+
+/* 5. List the phases of the React component lifecycle.
+
+The three main phases of the React component lifecycle are initialization, update, and destruction. Within these phases are React lifecycle methods that fall under each category. The first phase and last phase usually only happens once. Initialization occurs when the React element mounts to the DOM and destruction occurs when the element is dismounted from the DOM. Update phase occurs each time their is a change in the state causing the element to re-render.
+
+The react lifecyle methods that fall under initialization are: getInitialState(), getDefaultProps(), componentWillMount(), render(), and  componentDidMount().
+
+The react lifecyle methods that fall under update are: componentWillReceiveProps(), shouldComponentUpdate(), componentWillUpdate(), render(), and componentDidUpdate().
+
+The react lifecyle method that falls under destruction is: componentWillUnmount().
+*/
+
+/* 6. Explain the role of the Reducer.
+Reducers are pure functions that reconcile changes in state due to an action that was dispatched.  It takes the previous state and uses Object.assign with the action. You never want to mutate the object directly because any elements that are subscribed to the store will not update since it wouldn't recognize a change occurred in the object.
+
+There is a special reducer that is often referred to as the root reducer which utilizes combineReducers. combineReducers gets the results of all the child reducers and puts it in one state object.
+*/
