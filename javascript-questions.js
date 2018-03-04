@@ -1,5 +1,5 @@
 /* 1. Does Javascript pass parameters by value or by reference?
-
+Depending on the data passed into the parameter JavaScript stores it as a value or a reference. So primitive values in JavaScript are passed in by value meaning that in the memory block the representation of the value is stored. Primitive values in JavaScript are numbers, strings, booleans, undefined, null, and symbol. Other data types outside of primitive values, such as arrays or objects, would be stored as a reference meaning it points the object in memory allocation. Each time you modify an object it creates another block in memory allocation to be pointed to.
 */
 
 // 2. The following code:
@@ -82,4 +82,8 @@ The react lifecyle method that falls under destruction is: componentWillUnmount(
 Reducers are pure functions that reconcile changes in state due to an action that was dispatched.  It takes the previous state and uses Object.assign with the action. You never want to mutate the object directly because any elements that are subscribed to the store will not update since it wouldn't recognize a change occurred in the object.
 
 There is a special reducer that is often referred to as the root reducer which utilizes combineReducers. combineReducers gets the results of all the child reducers and puts it in one state object.
+*/
+
+/* Embed two or more components into one.
+Please look at file which will show two embedded components navigation and title. The title component has the child component Table being rendered in it.
 */
