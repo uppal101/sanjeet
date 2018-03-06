@@ -85,5 +85,5 @@ There is a special reducer that is often referred to as the root reducer which u
 */
 
 /* Embed two or more components into one.
-Please look at file which will show two embedded components navigation and title. The title component has the child component Table being rendered in it.
+Please look at file which will show two embedded components navigation and title. The title component has the child component Table being rendered in it. 
 */
