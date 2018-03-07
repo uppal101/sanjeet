@@ -84,6 +84,14 @@ Reducers are pure functions that reconcile changes in state due to an action tha
 There is a special reducer that is often referred to as the root reducer which utilizes combineReducers. combineReducers gets the results of all the child reducers and puts it in one state object.
 */
 
-/* Embed two or more components into one.
-Please look at file which will show two embedded components navigation and title. The title component has the child component Table being rendered in it. 
+/* 7. Embed two or more components into one.
+Please navigate to the showcase directory. You will need to run npm install and then npm start to view embedded components locally. If you would like to see the code for the embedded components, please look under src directory, then App.js file.
+
+Note: For this part and reddit I did use create-react-app for set up.
+*/
+
+/* 8. Reddit
+Please navigate to the reddit directory. Unfortunately I wasn't able to make the call successfully to the reddit api to authenticate myself. You are able to look at one of my attempts with app.js since I attempted to use passport-reddit package. I even followed the docs to make a call in post-man, but got a response of HTML in which it asked me to sign in. I even attempted to access a token but got a 401. I tried to reach out to the dev community with a little more detail explained in this link: https://www.reddit.com/r/redditdev/comments/82ce2z/cant_make_a_call_to_authenticate/
+
+Due to not knowing what type of data I was going to get from reddit api, I wasn't sure how to design my front end around it accurately. Furthmore, the front-end code has not been modified from running create-react-app.
 */
